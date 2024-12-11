@@ -206,6 +206,9 @@ a:hover{
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
+    .conny{
+        margin-top: 81px;
+    }
 }
 
 /**/
