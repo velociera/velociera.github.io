@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velociera</title>
+    <link rel="shortcut icon" href="velociera-black-16x16-transparent-circular.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hamba:hover{
+            text-shadow: 1px 1px black;
+            transition: all 1s;
+        }
+        .soma{
+            font-size: 40px;
+        }
+        #pros{
+            overflow: auto;
+            white-space: nowrap;
+        }
+        #pros a{
+            display: inline-block;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar1">
+            <div class="brand">
+                <img onclick="scrollup()" class="scroll" src="velociera-black-50x50-transparent-circular-noborder.png" alt="Velociera Logo">
+            </div>
+            <div class="navbar-section">
+                <a class="navy" onclick="home()">Home</a>
+                <a class="navy" onclick="products()">Products</a>
+                <a class="navy" onclick="services()">Services</a>
+                <a class="navy" onclick="contact()">Contact</a>
+                <a class="navy" onclick="store()">Store</a>
+                <a class="navy" onclick="about()">About</a>
+            </div class="account">
+                <img class="acc" src="account-50x50-transparent.png" onclick="scroll()" alt="account">
+            </div>
+        </div>
+
+        <div class="navbar2" id="navbar2">
+            <div class="b1">
+                <img class="b11" style="cursor: pointer;" src="velociera-white-50x50transparent.png" onclick="scrollup()"  alt="Velociera">
+            </div>
+            <div class="navv2menu" id="navv2menu">
+                <a style="cursor: pointer;" id="vertt" onclick="home1()">Home</a>
+                <a style="cursor: pointer;" id="vertt" onclick="products1()">Products</a>
+                <a style="cursor: pointer;" id="vertt" onclick="services1()">Services</a>
+                <a style="cursor: pointer;" id="vertt" onclick="contact1()">Contact</a>
+                <a style="cursor: pointer;" id="vertt" onclick="store1()">Store</a>
+                <a style="cursor: pointer;" id="vertt" onclick="about1()">About</a>
+            </div>
+            <div class="hammenu" style="cursor: pointer;">
+                <img class="b22" src="ham-white-transparent-50x50.png" alt="hamburger-menu" style="margin-right: 25px;" onclick="expandnav()">
+            </div>
+    </header>
+
+    <div class="home" id="home">
+        <img class="ad" id="ad1" src="f1 (1).jpg" alt="f1">
+        <img class="ad" id="ad2" src="f1 (2).jpg" alt="f2">
+        <img class="ad" id="ad3" src="f1 (3).jpg" alt="f3">
+        <img class="ad" id="ad4" src="f1 (4).jpg" alt="f4">
+        <img class="ad" id="ad5" src="f1 (5).jpg" alt="f5">
+    </div>
+    <div class="products" id="products">
+        <div class="sec1">
+            <h1><center>New Releases</center></h1>
+            <div class="newrel">
+                <a onclick=""><img class="pr" src="products/lop.jpg" alt="laptop"></a>
+                <a onclick=""><img class="pr" src="products/mob.jpg" alt="mobile"></a>
+                <a onclick=""><img class="pr" src="products/tob.jpg" alt="tablet"></a>
+                <a onclick=""></a>
+            </div>
+        </div>
+        <div class="sec2">
+            <h1><center>Laptops</center></h1>
+            <div class="laps" id="pros">
+                <a onclick=""><img class="pr" src="products/prod/laps/1.jpg" alt=""></a>
+                <a onclick=""><img class="pr" src="products/prod/laps/2.jpg" alt=""></a>
+                <a onclick=""><img class="pr" src="products/prod/laps/3.jpg" alt=""></a>
+                <a onclick=""><img class="pr" src="products/prod/laps/4.jpg" alt=""></a>
+                <a onclick=""><img class="pr" src="products/prod/laps/5.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="sec3">
+            <h1><center>Mobiles</center></h1>
+            <div class="mobs" id="pros">
+                <a onclick=""><img src="products/prod/mobs/1.jpg" alt="" class="pr"></a>
+                <a onclick=""><img src="products/prod/mobs/2.jpg" alt="" class="pr"></a>
+                <a onclick=""><img src="products/prod/mobs/3.jpg" alt="" class="pr"></a>
+                <a onclick=""><img src="products/prod/mobs/4.jpg" alt="" class="pr"></a>
+                <a onclick=""><img src="products/prod/mobs/5.jpg" alt="" class="pr"></a>
+            </div>
+        </div>
+        <div class="sec4">
+            <h1><center>Tablets</center></h1>
+            <div class="tabs" id="pros">
+                <a onclick=""><img src="products/prod/tabs/1.jpg" alt="" class="pr"></a>
+                <a onclick=""><img src="products/prod/tabs/2.jpg" alt="" class="pr"></a>
+                <a onclick=""><img src="products/prod/tabs/3.jpg" alt="" class="pr"></a>
+                <a onclick=""><img src="products/prod/tabs/4.jpg" alt="" class="pr"></a>
+                <a onclick=""><img src="products/prod/tabs/5.jpg" alt="" class="pr"></a>
+            </div>
+        </div>
+    </div>
+    <div class="services" id="services"></div>
+    <div class="contact" id="contact">
+        <div class="conny">
+            <h1 style="text-align: center;">Feel free to contact. We are here to help.</h1>
+            <h2 style="text-align: center;"><i class="fa-solid fa-phone"></i> <a class="hamba" style="color: black; text-decoration: none; transition: all 1s;" href="tel:+918668536352">+918668536352</a></h2>
+            <div class="socio" style="text-align: center;">
+                <h1 style="text-align: center;">Engage with social media</h1>
+                <a class="soma" href="https://www.instagram.com/velociera/" style="color: black;"><i class="fa-brands fa-instagram"></i></a>
+                <a class="soma" href="https://www.youtube.com/@velociera" style="color: black;"><i class="fa-brands fa-youtube"></i></a>
+                <a class="soma" href="https://www.threads.net/@velociera" style="color: black;"><i class="fa-brands fa-threads"></i></a>
+                <a class="soma" href="https://x.com/velociera" style="color: black;"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="soma" href="https://github.com/velociera" style="color: black;"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="store" id="store">
+        <h1 style="margin-top: 75px; text-align: center;">Find a Store Near You</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d14999.294804625983!2d73.79007190147722!3d19.973915152787956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d19.972096!2d73.793536!4m5!1s0x3bddebfa19691bb5%3A0x7ad77366cfcccb34!2sCroma%20-%20Inox%20Signal%2C%20Pushpa%20Park%2C%20Nashik%20Pune%20Highway%2C%20near%20Inox%20Signal%2C%20Nashik%2C%20Maharashtra%20422011!3m2!1d19.9794822!2d73.807147!5e0!3m2!1sen!2sin!4v1733550564214!5m2!1sen!2sin" height="470" style="border: 1px; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="storey"></iframe>
+        <h1 style="margin-top: 75px; text-align: center;">Find a Dealership</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30002.13175581058!2d73.73855963955074!3d19.95529290000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb53af0d5833%3A0x9fa7adf5cdcbafff!2sMahindra%20Kamal%20Carline%20Commercial%20Showroom!5e0!3m2!1sen!2sin!4v1733745606543!5m2!1sen!2sin" height="470" style="border: 1px; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="about" id="about">
+        <img class="abimg" src="velociera-black-1440x1440-transparent.png" alt="Velociera"/>
+        <h1 style="text-align: center;">About Velociera</h1>
+        <p style="text-align: center;">
+            At Velociera, we redefine the boundaries of innovation, merging cutting-edge technology with a sense of timeless elegance. Our commitment to excellence reflects a deep understanding of what it means to be premium, where every product and service is crafted with precision and care.
+
+We embrace an aesthetic philosophy that blends sophistication with functionality, creating solutions that are as beautiful as they are powerful. Innovation drives us forward, while an unwavering dedication to quality ensures we deliver experiences that inspire confidence and admiration.
+
+Our brand symbolizes more than technology—it represents a lifestyle of refinement, where the pursuit of perfection meets the demands of a dynamic, ever-evolving world. With a vision anchored in royal values and a future fueled by bold creativity, we stand as a beacon of premiumness in the tech industry.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
