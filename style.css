@@ -1,0 +1,192 @@
+*{
+    font-family: Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: inline;
+}
+#navbar1{
+    background-color: rgba(0, 0, 0, 0.712);
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    border-radius: 5px;
+    z-index: 1000;
+    margin-right: 1%;
+    margin-left: 1%;
+    transition: all 1s;
+}
+#navbar2{
+    display: none;
+}
+img, a{
+    cursor: pointer;
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 1%;
+}
+#brand1, #brand2{
+    margin: 10px;
+}
+#acc1{
+    margin: 10px;
+}
+#a1{
+    animation: fadein ease 2s;
+}
+#v1{
+    animation: fadein ease 2s;
+}
+#c1{
+    display: none;
+    height: 30px;
+    animation: fadein ease 2s;
+}
+#b1, #b2{
+    display: none;
+    animation: fadein ease 2s;
+}
+#navlink1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    animation: fadein ease 3.5s;
+}
+#navlink1 a{
+    color: white;
+    text-decoration: none;
+    gap: 15px;
+    transition: all 1s;
+}
+#navlink1 a:hover{
+    text-shadow: 0 0 50px #ffffff, 0 0 50px #ffffff;
+    transition: all 1s;
+}
+.hero{
+    width: 100%;
+    border-radius: 5px;
+}
+#foo{
+    background-color: rgba(0, 0, 0, 0.712);
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    color: white;
+    z-index: 990;
+}
+#hammy{
+    margin: 10px;
+    height: 30px;
+}
+#clossa{
+    display: none;
+    margin: 10px;
+    height: 30px;
+    animation: fadein ease 2s;
+}
+#dingo{
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 55px;
+    animation: fadein ease 2s;
+}
+.abimg{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    transition: all 1s;
+}
+.ab11{
+    height: 575px;
+    transition: all 1s;
+}
+#accbigga, #accsmalla{
+    display: none;
+    animation: fadein ease 2s;
+    margin-top: 100px;
+}
+.pr{
+    height: 250px;
+    width: 250px;
+    margin-left: 1%;
+    border-radius: 5px;
+}
+#pros{
+    overflow: auto;
+    white-space: nowrap;
+}
+#pros a{
+    display: inline-block;
+}
+.newrel{
+    overflow: auto;
+    white-space: nowrap;
+}
+/*Scrollbar*/
+::-webkit-scrollbar{
+    width: 0px;
+}
+/**/
+/*Animations*/
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (max-width: 640px){
+    #navbar1{
+        display: none;
+    }
+    #navbar2{
+        background-color: rgba(0, 0, 0, 0.712);
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        width: 100%;
+        border-radius: 5px;
+        z-index: 1000;
+        margin-right: 1%;
+        margin-left: 1%;
+        transition: all 1s;
+    }
+    #navlink2{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 30px;
+        color: white;
+        flex-direction: column;
+    }
+    #navlink2 a{
+        color: white;
+        text-decoration: none;
+    }
+}
+@media (max-width: 584px){
+    .ab11{
+        height: 400px;
+        transition: all 1s;
+    }
+}
