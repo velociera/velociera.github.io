@@ -44,6 +44,10 @@ function scrollup(){
     window.scrollTo({ top: 0, behavior: "smooth"});
 }
 //
+function scrolla(){
+    window.scrollTo({ top: 115, behavior: "smooth"});
+}
+//
 function op_nav2(){
     foo.style.display = "none";
     navbar2.style.height = "500px";
