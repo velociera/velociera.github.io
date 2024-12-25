@@ -94,6 +94,17 @@ header{
     backdrop-filter: blur(15px);
     color: white;
     z-index: 990;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.socio a{
+    color: white;
+    font-size: 25px;
+    gap: 10px;
+    text-decoration: none;
+    cursor: pointer;
 }
 #hammy{
     margin: 10px;
