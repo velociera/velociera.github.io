@@ -79,6 +79,7 @@ header{
     height: 525px;
     width: 100%;
     border-radius: 5px;
+    transition: all 1s;
 }
 .hero{
     width: 100%;
@@ -186,6 +187,7 @@ header{
     }
     #happpp{
         height: 325px;
+        transition: all 1s;
     }
     #navlink2 a{
         color: white;
@@ -201,30 +203,36 @@ header{
 @media (max-width: 510px){
     #happpp{
         height: 300px;
+        transition: all 1s;
     }
 }
 @media (max-width:474px){
     #happpp{
         height: 250px;
+        transition: all 1s;
     }
 }
 @media (max-width:425px){
     #happpp{
         height: 200px;
+        transition: all 1s;
     }
 }
 @media (max-width: 355px){
     #happpp{
         height: 175px;
+        transition: all 1s;
     }
 }
 @media (max-width: 305px){
     #happpp{
         height: 155px;
+        transition: all 1s;
     }
 }
 @media (max-width: 280px){
     #happpp{
         height: 150px;
+        transition: all 1s;
     }
 }
