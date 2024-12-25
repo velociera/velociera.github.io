@@ -75,6 +75,11 @@ header{
     text-shadow: 0 0 50px #ffffff, 0 0 50px #ffffff;
     transition: all 1s;
 }
+#happpp{
+    height: 525px;
+    width: 100%;
+    border-radius: 5px;
+}
 .hero{
     width: 100%;
     border-radius: 5px;
