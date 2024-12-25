@@ -136,9 +136,30 @@ header{
 #pros{
     overflow: auto;
     white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 #pros a{
     display: inline-block;
+}
+#toolo{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+}
+#tool{
+    height: 50px;
+    border-radius: 5px;
+    width: 175px;
+    background-color: rgba(92, 91, 91, 0.712);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-decoration: none;
 }
 .newrel{
     overflow: auto;
