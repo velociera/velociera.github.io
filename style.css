@@ -170,7 +170,7 @@ header{
     width: 0px;
 }
 /**/
-/*Animations*/
+/* Animations
 @keyframes fadein{
     0%{
         opacity: 0;
@@ -179,6 +179,7 @@ header{
         opacity: 1;
     }
 }
+*/
 @media (max-width: 640px){
     #navbar1{
         display: none;
