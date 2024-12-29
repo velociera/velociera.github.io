@@ -148,7 +148,6 @@ header{
     overflow: auto;
     white-space: nowrap;
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 #pros a{
