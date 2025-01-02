@@ -152,6 +152,9 @@ i:hover{
 #pros a{
     display: inline-block;
 }
+#pros div{
+    display: inline-block;
+}
 .pr{
     height: 250px;
     width: 250px;
@@ -199,6 +202,36 @@ i:hover{
 .ab11{
     height: 575px;
     transition: all 1s;
+}
+#poimg{
+    height: 200px;
+    float: left;
+}
+.po{
+    height: 250px;
+    width: 450px;
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: solid 1px black;
+    text-wrap: wrap;
+    overflow: hidden;
+    transition: all 0.7s ease;
+}
+.po:hover{
+    background-color: #d6d6d6d8;
+    transition: all 0.7s ease;
+}
+#pop{
+    font-size: 15px;
+}
+.poa{
+    color: rgb(0, 119, 255);
+    cursor: pointer;
+    text-decoration: none;
+}
+.poa:hover{
+    text-decoration: underline;
 }
 /**/
 /*Scrollbar*/
