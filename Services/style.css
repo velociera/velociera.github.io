@@ -1,0 +1,381 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: inline;
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 1%;
+}
+#navbar1{
+    background-color: rgba(0,0,0,0.712);
+    display: flex;
+    height: 50px;
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    border-radius: 5px;
+    z-index: 2000;
+    margin-right: 1%;
+    margin-left: 1%;
+    transition: all 0.9s;
+}
+#navbar2{
+    display: none;
+}
+#brand1{
+    margin: 10px;
+    cursor: pointer;
+}
+#blank1{
+    display: none;
+}
+#close1{
+    display: none;
+    cursor: pointer;
+    height: 30px;
+    margin: 10px;
+}
+#account1{
+    margin: 10px;
+    cursor: pointer;
+}
+#navlink1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+#navlink1 a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 1s;
+}
+#navlink1 a:hover{
+    text-shadow: 0 0 50px #ffffff, 0 0 50px #ffffff;
+    transition: all 1s;
+}
+#dingo{
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 55px;
+}
+#accsmall{
+    display: none;
+    margin-top: 100px;
+}
+#accbigg{
+    display: none;
+    margin-top: 100px;
+}
+.hero{
+    width: 100%;
+    border-radius: 5px;
+}
+#foo{
+    background-color: rgba(0,0,0,0.712);
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s ease;
+}
+#foo .social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+i{
+    color: rgb(182, 182, 182);
+    font-size: 20px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+i:hover{
+    color: white;
+    transition: color 0.3s ease;
+}
+#foo .brand-name p{
+    margin: 5px 0;
+    font-size: 14px;
+}
+#foo .footer-links{
+    gap: 14px;
+}
+#foo .footer-links a{
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+#foo .footer-links a:hover{
+    color: white;
+    transition: all 0.3 ease;
+}
+/*ulasc*/
+#ulasc{
+    display: none;
+}
+/**/
+/*products page*/
+#pros{
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 30px;
+}
+#pros a{
+    display: inline-block;
+}
+#pros div{
+    display: inline-block;
+}
+.pr{
+    height: 250px;
+    width: 250px;
+    margin-left: 1%;
+    border-radius: 5px;
+}
+.newrel{
+    overflow: auto;
+    white-space: nowrap;
+}
+/**/
+/*Plans*/
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.plan {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+.plan:hover {
+    transform: scale(1.05);
+}
+.plan h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.plan p {
+    color: #555;
+    margin-bottom: 20px;
+}
+.price {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.info{
+    height: 200px;
+    width: 100%;
+}
+.image{
+    float: left;
+    height: 200px;
+    width: 40%;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    padding-left: 40px;
+}
+.detail{
+    float: right;
+    height: 200px;
+    width: 50%;
+}
+/**/
+/*Help*/
+#happpp{
+    height: 530px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+#tool{
+    height: 50px;
+    border-radius: 5px;
+    width: 175px;
+    background-color: rgba(92, 91, 91, 0.712);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-decoration: none;
+}
+#toolo{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+}
+/**/
+/*About*/
+.abimg{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    transition: all 1s;
+}
+.ab11{
+    height: 575px;
+    transition: all 1s;
+}
+#poimg{
+    height: 200px;
+    float: left;
+}
+.po{
+    height: 250px;
+    width: 450px;
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: solid 1px black;
+    text-wrap: wrap;
+    overflow: hidden;
+    transition: all 0.7s ease;
+}
+.po:hover{
+    background-color: #d6d6d6d8;
+    transition: all 0.7s ease;
+}
+#pop{
+    font-size: 15px;
+}
+.poa{
+    color: rgb(0, 119, 255);
+    cursor: pointer;
+    text-decoration: none;
+}
+.poa:hover{
+    text-decoration: underline;
+}
+/**/
+/*Scrollbar*/
+::-webkit-scrollbar{
+    width: 0px;
+}
+/**/
+@media (max-width: 669px){
+    #navbar1{
+        display: none;
+    }
+    #navbar2{
+        background-color: rgba(0,0,0,0.712);
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        border-radius: 5px;
+        margin-left: 1%;
+        margin-right: 1%;
+        transition: all 0.9s;
+        z-index: 2000;
+    }
+    #brand2{
+        margin: 10px;
+    }
+    #blank2{
+        display: none;
+    }
+    #close2{
+        display: none;
+        height: 30px;
+    }
+    #acc2{
+        margin: 10px;
+        cursor: pointer;
+    }
+    #hamburger{
+        height: 30px;
+    }
+    #navlink2{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 30px;
+        color: white;
+        flex-direction: column;
+        transition: font-size 1.5s;
+    }
+    #navlink2 a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+@media (max-width: 509px){
+    #footer-links {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer-links a{
+        font-size: 30px;
+    }
+    #ulasc{
+        display: block;
+    }
+}
+@media (max-width: 585px){
+    .ab11{
+        height: 450px;
+        transition: all 1s;
+    }
+}
+@media (max-width: 460px){
+    .ab11{
+        height: 390px;
+        transition: all 1s;
+    }
+}
+@media (max-width: 390px){
+    .ab11{
+        height: 310px;
+        transition: all 1s;
+    }
+}
+@media (max-width: 310px){
+    .ab11{
+        height: 240px;
+        transition: all 1s;
+    }
+}
