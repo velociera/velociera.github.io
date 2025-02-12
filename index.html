@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Velociera</title>
+    <meta name="title" content="Velociera">
+    <meta name="description" content="Velociera, an Indian Tech Brand known for its simple, innovative and inspiring tech with greatest customer satisfaction, value and greatness.">
+    <meta name="keywords" content="Velociera, velociera, smartphones, mobiles, tablets, laptops, watches, cars, bikes, technology, blog, services, online, brand, tech, enthusiasts, customer, discounts, india, India, indian, Indian, greatness, satisfaction, valuable, rider, driver, government, uniqueness, simplicity, power, worth">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="shortcut icon" href="images/Logos-icons/velociera-black-16x16-transparent-circular.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="set-cookies">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Kugile';
+            src: url('Kugile_Demo.ttf');
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Kugile';
+            background: url('24718-345209742.gif') no-repeat center center/cover;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 2s ease-in;
+            animation: backgroundFade 3s ease-in-out;
+        }
+        @keyframes backgroundFade {
+            0% { filter: brightness(0.3); }
+            100% { filter: brightness(1); }
+        }
+        h1, h2 {
+            color: white;
+            opacity: 1;
+            text-align: center;
+            padding: 0 10px;
+        }
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 5px;
+            animation: fadeInSlide 2s ease-in-out, glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+            to { text-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+        }
+        h2 {
+            font-size: 1.5rem;
+            opacity: 0;
+            margin-top: 0;
+            animation: fadeIn 2s ease-in-out 1s forwards;
+        }
+        @keyframes fadeInSlide {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        img {
+            display: none;
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 2s ease-in, transform 1.5s ease-in-out;
+        }
+        img.appear {
+            opacity: 1;
+            transform: scale(1);
+        }
+        img:hover {
+            transform: scale(1.1);
+            transition: transform 0.5s ease-in-out;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body onload="document.body.style.opacity='1'">
+    <h1 id="title" style="font-family: Kugile;">Velociera</h1>
+    <h2 id="subtitle" style="font-family: Kugile;">Indefectible</h2>
+    <img id="image" src="velociera-1440x1440-white-transparent.png" alt="Velociera Image" onmouseover="navigateWithTransition()">
+    <script>
+        function navigateWithTransition() {
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                window.location.href = 'home.html';
+            }, 1000);
+        }
+
+        setTimeout(() => {
+            document.getElementById("title").style.animation = "fadeOut 2s ease-in-out forwards";
+            document.getElementById("subtitle").style.animation = "fadeOut 2s ease-in-out forwards";
+            setTimeout(() => {
+                document.getElementById("title").style.display = "none";
+                document.getElementById("subtitle").style.display = "none";
+                const image = document.getElementById("image");
+                image.style.display = "block";
+                setTimeout(() => {
+                    image.classList.add("appear");
+                }, 100);
+            }, 2000);
+        }, 5000);
+    </script>
+</body>
+</html>
