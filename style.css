@@ -91,12 +91,28 @@ nav img {
     position: relative;
     width: 100%;
 }
-
 .container video {
     width: 100%;
     height: auto;
 }
+.haramkhor{
+    position: relative;
+    top: 100px;
+    color: white;
+    text-align: center;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 
+main {
+    min-height: calc(125vh - 100px); /* Adjust based on your footer height */
+    padding: 20px;
+}
 /* Main Slider */
 .slider {
     position: relative;
@@ -327,7 +343,6 @@ footer {
         height: 80px;
     }
 }
-
 
 
 
