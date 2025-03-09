@@ -101,6 +101,9 @@ nav img {
     color: white;
     text-align: center;
 }
+.haramkhor h1, .haramkhor p{
+    color: white;
+}
 html, body {
     height: 100%;
     margin: 0;
